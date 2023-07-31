@@ -1,0 +1,134 @@
+.auth {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  /* background-color: aqua; */
+  margin: auto auto;
+  /* width: 60%; */
+  max-width: 40vw;
+  min-width: 600px;
+  padding: 12px;
+  animation: show 0.8s;
+  min-height: 50vh;
+  
+  
+}
+.login-bg{
+    width: 98vw;
+    height: 100vh;
+    position: absolute;
+    filter: blur(8px);
+  -webkit-filter: blur(3px);
+  object-fit: cover;
+    
+}
+.auth-body{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /* background: url("../images/login_background.jpg"); */
+  background-size: cover;
+  
+
+
+}
+.left,.right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* text-align: center; */
+  padding: 12px;
+  justify-content: center;
+  
+}
+#togle-btn{
+  width: 100px;
+  margin: 0;
+}
+.right {
+  background-color: #090b13;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* .lft{
+  width: 70%;
+} */
+.lft > .form-control {
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 12px;
+  color: rgb(76, 76, 76);
+  
+}
+.auth-form>a{
+  color: #00587A;
+  font-size: small;
+  text-align: right;
+  width: 60%;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+.left>h1{
+  text-align: center;
+}
+
+.auth-form>button{
+  margin: 0;
+  width: 80%;
+  background-color: #090b13;
+  border: none;
+}
+.signin{
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 960px) {
+ .auth{
+  flex-direction: column-reverse;
+  width: 90%;
+  max-width: 400px;
+  min-width: 0;
+ }
+ .right{
+  padding: 24px
+ }
+ .lft{
+  width: 90%;
+ }
+}
+
+@keyframes show {
+  0%,
+  50% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50.1%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
