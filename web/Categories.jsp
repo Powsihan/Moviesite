@@ -119,7 +119,7 @@
                                                     <p class="card-text">ISBN: 1234567890</p>
                                                     <p class="card-text">Publication Date: 01.01.2023</p>
                                                     <div class="revbtn">
-                                                        <a href="../Pages/Review.html" class="btn btn-primary">Review</a>
+                                                        <a href="./Review.jsp" class="btn btn-primary">Review</a>
                                                         <a href="#" class="btn btn-primary">Buy</a>
                                                     </div>
                                                 </div>

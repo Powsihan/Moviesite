@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <%@ page import="java.sql.*" %>
+   
+    
         <!DOCTYPE html>
         <html lang="en">
 
@@ -68,7 +70,30 @@
         </div>
     </nav>
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<%
+    // Assuming you have established a database connection
+    String dbUrl = "jdbc:mysql://localhost:3306/bookreview"; // Replace with your database URL
+    String dbUser = "root"; // Replace with your database username
+    String dbPassword = ""; // Replace with your database password
+    Connection connection = null;
 
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
+    } catch (ClassNotFoundException | SQLException e) {
+        e.printStackTrace();
+        // Handle database connection errors
+    }
+
+    // Check if ISBN parameter is provided in the URL
+    if (request.getParameter("isbn") != null) {
+        String isbn = request.getParameter("isbn");
+
+        // Get book details by ISBN
+        BookDetails bookDetails = BookDetails.getBookDetailsByISBN(connection, isbn);
+        if (bookDetails != null) {
+            // Rest of your JSP code
+%>
 
             <section id="counts" class="counts">
                 <div class="container text-light" data-aos="fade-up">
