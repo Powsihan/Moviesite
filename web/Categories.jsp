@@ -9,6 +9,7 @@
     <!-- <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'> -->
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./Styles/Categories.css">
+    <link rel="stylesheet" href="./Styles/HeaderFooter.css">
     <!-- ----------------------------------------------------------------- -->
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -33,10 +34,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-color navvr fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color navvr fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand logog" href="./index.html"><img src="/images/logo.png" alt="logo" style="height:50px; width: 80px;"></a>
+            <a class="navbar-brand logog" href="./index.html"><img src="./images/logo.png" alt="logo" style="height:50px; width: 100px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +58,9 @@
                     </li>
                 </ul>
                 <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2 bg-dark text-light glowing-border w-200 siz" type="search" placeholder="Search..." required aria-label="Search">
-                    <button class="btn btn-block btn-lg glow-button btn-dark" type="submit"><i
-                            class="fa-solid fa-magnifying-glass fa-beat fa-lg"></i></button>
+                    <input class="form-control me-2 bg-light glowing-border w-200 siz" type="search" placeholder="Search..." required aria-label="Search">
+                    <button class="btn btn-block btn-lg glow-button btn-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass  fa-lg"></i></button>
                 </form>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-but">
@@ -1597,22 +1598,22 @@
 
 
     <!----------- Footer ------------>
-    <footer class="footer-bs ">
+    <footer class="footer-bs">
         <div class="row ">
             <div class="col-md-3 footer-brand animated fadeInLeft ">
                 <img src="/images/logo.png " alt="logo " style="height:70px; width: 110px; ">
                 <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                <p>© 2007 ReadO, All rights reserved</p>
+                <p>� 2007 CinesynC, All rights reserved</p>
             </div>
             <div class="col-md-4 footer-nav animated fadeInUp ">
-                <h4>Menu —</h4>
+                <h4>Menu ?</h4>
 
                 <div class="col-md-6 ">
                     <ul class="list ">
-                        <li><a href="../Pages/Home.php"><i class="fa-solid fa-house icoon "></i>Home</a></li>
-                        <li><a href="../Pages/About_us.php"><i class="fa-solid fa-hands-bound icoon "></i>About Us</a></li>
-                        <li><a href="../Pages/Categories.php"><i class="fa-solid fa-book icoon "></i>Categories</a></li>
-                        <li><a href="../Pages/Contact_us.php"><i class="fa-solid fa-headset icoon "></i>Contact Us</a></li>
+                        <li><a href="./index.html"><i class="fa-solid fa-house icoon "></i>Home</a></li>
+                        <li><a href="./About_us.jsp"><i class="fa-solid fa-hands-bound icoon "></i>About Us</a></li>
+                        <li><a href="./Categories.jsp"><i class="fa-solid fa-book icoon "></i>Categories</a></li>
+                        <li><a href="./Contact_us.jsp"><i class="fa-solid fa-headset icoon "></i>Contact Us</a></li>
                         <li><a href="# "><i class="fa-solid fa-chalkboard-user icoon "></i>Terms & Condition</a></li>
                         <li><a href="# "><i class="fa-solid fa-lock icoon "></i>Privacy Policy</a></li>
                     </ul>
@@ -1630,13 +1631,13 @@
             </div>
             <div class="col-md-3 footer-ns animated fadeInRight ">
                 <h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>A rover wearing a fuzzy suit doesn?t alarm the real penguins</p>
                 <p>
                     <div class="input-group ">
-                        <input class="form-control me-2 bg-dark text-light glowing-border w-200 siz " type="search " placeholder="Type here..." required aria-label="Search ">
+                        <input class="form-control me-2 bg-light  glowing-border w-200 siz " type="search " placeholder="Type here..." required aria-label="Search ">
                         <span class="input-group-btn ">
-                        <button class="btn btn-block btn-lg glow-button btn-dark " type="submit "><i
-                                class="fa-solid fa-envelope fa-beat fa-xl "></i></button>
+                        <button class="btn btn-block btn-lg glow-button  " type="submit "><i
+                                class="fa-solid fa-envelope  fa-xl "></i></button>
                     </span>
                     </div>
                     <!-- /input-group -->
@@ -1644,7 +1645,7 @@
             </div>
         </div>
         <hr>
-        <span class="align-items-center justify-content-center d-flex ">© 2007 ReadO, All rights reserved</span>
+        <span class="align-items-center justify-content-center d-flex ">� 2007 CinesynC, All rights reserved</span>
     </footer>
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 

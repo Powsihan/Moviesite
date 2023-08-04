@@ -10,6 +10,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./Styles/Contact_us.css">
+    <link rel="stylesheet" href="./Styles/HeaderFooter.css">
     <!-- ------------------------------------------------------------------->
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -28,9 +29,9 @@
     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-color navvr fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color navvr fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand logog" href="./index.html"><img src="/images/logo.png" alt="logo" style="height:50px; width: 80px;"></a>
+            <a class="navbar-brand logog" href="./index.html"><img src="./images/logo.png" alt="logo" style="height:50px; width: 100px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,9 +52,9 @@
                     </li>
                 </ul>
                 <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2 bg-dark text-light glowing-border w-200 siz" type="search" placeholder="Search..." required aria-label="Search">
-                    <button class="btn btn-block btn-lg glow-button btn-dark" type="submit"><i
-                            class="fa-solid fa-magnifying-glass fa-beat fa-lg"></i></button>
+                    <input class="form-control me-2 bg-light glowing-border w-200 siz" type="search" placeholder="Search..." required aria-label="Search">
+                    <button class="btn btn-block btn-lg glow-button btn-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass  fa-lg"></i></button>
                 </form>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-but">
@@ -66,10 +67,12 @@
     </nav>
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact text-light">
+    <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -107,14 +110,6 @@
                             <h4>Call:</h4>
                             <p>+11 558 554 5577</p>
                         </div>
-                        <!-- <ul>
-                            <li><a href="# "><i class="fa-brands fa-facebook fa-2xl socialicon "></i></a></li>
-                            <li><a href="# "><i class="fa-brands fa-twitter fa-2xl socialicon "></i></a></li>
-                            <li><a href="# "><i class="fa-brands fa-instagram fa-2xl socialicon "></i></a></li>
-                            <li><a href="# "><i class="fa-brands fa-pinterest fa-2xl socialicon "></i></a></li>
-                            <li><a href="# "><i class="fa-brands fa-youtube fa-2xl socialicon "></i></a></li>
-                        </ul> -->
-
                     </div>
 
                 </div>
@@ -124,17 +119,17 @@
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="me-2 bg-dark text-light glowing-border w-200 siz2" id="name" placeholder="Your Name" required>
+                                <input type="text" name="name" class="me-2 bg-light glowing-border w-200 siz2" id="name" placeholder="Your Name" required>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="me-2 bg-dark text-light glowing-border w-200 siz2" name="email" id="email" placeholder="Your Email" required>
+                                <input type="email" class="me-2 bg-light  glowing-border w-200 siz2" name="email" id="email" placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <input type="text" class="me-2 bg-dark text-light glowing-border siz2" name="subject" id="subject" placeholder="Subject" required>
+                            <input type="text" class="me-2 bg-light  glowing-border siz2" name="subject" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group mt-3">
-                            <textarea class="me-2 bg-dark text-light glowing-border siz3" name="message" rows="5" placeholder="Type here...." required></textarea>
+                            <textarea class="me-2 bg-light glowing-border siz3" name="message" rows="5" placeholder="Type here...." required></textarea>
                         </div>
                         <div class="my-3">
                             <div class="loading">Loading</div>
@@ -154,23 +149,23 @@
     </section>
     <!-- End Contact Section -->
 
-    <!----------- Footer ------------>
-    <footer class="footer-bs ">
+  <!----------- Footer ------------>
+    <footer class="footer-bs">
         <div class="row ">
             <div class="col-md-3 footer-brand animated fadeInLeft ">
                 <img src="/images/logo.png " alt="logo " style="height:70px; width: 110px; ">
                 <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                <p>© 2007 ReadO, All rights reserved</p>
+                <p>� 2007 CinesynC, All rights reserved</p>
             </div>
             <div class="col-md-4 footer-nav animated fadeInUp ">
-                <h4>Menu —</h4>
+                <h4>Menu ?</h4>
 
                 <div class="col-md-6 ">
                     <ul class="list ">
-                        <li><a href="../Pages/Home.php"><i class="fa-solid fa-house icoon "></i>Home</a></li>
-                        <li><a href="../Pages/About_us.php"><i class="fa-solid fa-hands-bound icoon "></i>About Us</a></li>
-                        <li><a href="../Pages/Categories.php"><i class="fa-solid fa-book icoon "></i>Categories</a></li>
-                        <li><a href="../Pages/Contact_us.php"><i class="fa-solid fa-headset icoon "></i>Contact Us</a></li>
+                        <li><a href="./index.html"><i class="fa-solid fa-house icoon "></i>Home</a></li>
+                        <li><a href="./About_us.jsp"><i class="fa-solid fa-hands-bound icoon "></i>About Us</a></li>
+                        <li><a href="./Categories.jsp"><i class="fa-solid fa-book icoon "></i>Categories</a></li>
+                        <li><a href="./Contact_us.jsp"><i class="fa-solid fa-headset icoon "></i>Contact Us</a></li>
                         <li><a href="# "><i class="fa-solid fa-chalkboard-user icoon "></i>Terms & Condition</a></li>
                         <li><a href="# "><i class="fa-solid fa-lock icoon "></i>Privacy Policy</a></li>
                     </ul>
@@ -188,12 +183,13 @@
             </div>
             <div class="col-md-3 footer-ns animated fadeInRight ">
                 <h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>A rover wearing a fuzzy suit doesn?t alarm the real penguins</p>
                 <p>
                     <div class="input-group ">
-                        <input class="form-control me-2 bg-dark text-light glowing-border w-200 siz " type="search " placeholder="Type here..." required aria-label="Search ">
+                        <input class="form-control me-2 bg-light  glowing-border w-200 siz " type="search " placeholder="Type here..." required aria-label="Search ">
                         <span class="input-group-btn ">
-                        <button class="btn btn-block btn-lg glow-button btn-dark " type="submit "><i class="fa-solid fa-envelope fa-beat fa-xl "></i></button>
+                        <button class="btn btn-block btn-lg glow-button  " type="submit "><i
+                                class="fa-solid fa-envelope  fa-xl "></i></button>
                     </span>
                     </div>
                     <!-- /input-group -->
@@ -201,7 +197,7 @@
             </div>
         </div>
         <hr>
-        <span class="align-items-center justify-content-center d-flex ">© 2007 ReadO, All rights reserved</span>
+        <span class="align-items-center justify-content-center d-flex ">� 2007 CinesynC, All rights reserved</span>
     </footer>
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 

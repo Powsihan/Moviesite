@@ -22,6 +22,7 @@
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
             <word>ISBN</word>
             <word>nbsp</word>
+            <word>Suspendisse</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
