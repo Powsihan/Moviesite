@@ -1,11 +1,15 @@
-<%@ page import="java.sql.*" %>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%-- 
+    Document   : register
+    Created on : Jul 30, 2023, 1:14:20 PM
+    Author     : HP
+--%>
 
+<%@page import="classes.DbConnector"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%--<%@page import="classes.MD5" %>--%>
+<%@page import="java.sql.*" %>
 <%
-    String dbUrl = "jdbc:mysql://localhost:3306/bookreview"; // Replace with your database URL
-    String dbUser = "root"; // Replace with your database username
-    String dbPassword = ""; // Replace with your database password
-
     String isbn = request.getParameter("isbn");
     String title = request.getParameter("title");
     String image = request.getParameter("image"); // Assuming you handle the image upload separately
@@ -13,52 +17,36 @@
     String author = request.getParameter("author");
     String review = request.getParameter("review");
     String category = request.getParameter("categories");
+//    String password = MD5.getMd5(request.getParameter("password"));
 
-    Connection connection = null;
-    PreparedStatement preparedStatement = null;
-
-    try {
-        Class.forName("com.mysql.jdbc.Driver");
-        connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
-
-        String query = "INSERT INTO book (ISBN, Title, Image, Publication_Date, Author, Review, Categories) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setString(1, isbn);
-        preparedStatement.setString(2, title);
-        preparedStatement.setString(3, image);
-        preparedStatement.setString(4, publication);
-        preparedStatement.setString(5, author);
-        preparedStatement.setString(6, review);
-        preparedStatement.setString(7, category);
-
-        int rowsAffected = preparedStatement.executeUpdate();
-
-        // Check if the book was inserted successfully
-        if (rowsAffected > 0) {
-            // Redirect back to the admin.jsp page with a success message
-            response.sendRedirect("admin.jsp?message=success");
-        } else {
-            // Redirect back to the admin.jsp page with an error message
-            response.sendRedirect("admin.jsp?message=error");
-        }
-    } catch (ClassNotFoundException | SQLException e) {
-        e.printStackTrace();
-        // Handle database connection or insertion errors
-        response.sendRedirect("admin.jsp?message=error");
-    } finally {
-        if (preparedStatement != null) {
-            try {
-                preparedStatement.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+    String query = "INSERT INTO book (ISBN, Title, Image, Publication_Date, Author, Review, Categories) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    Connection con = DbConnector.getConnection();
+    PreparedStatement pstmt = con.prepareStatement(query);
+    pstmt.setString(1, isbn);
+    pstmt.setString(2, title);
+    pstmt.setString(3, image);
+    pstmt.setString(4, publication);
+    pstmt.setString(5, author);
+    pstmt.setString(6, review);
+    pstmt.setString(7, category);
+    int a = pstmt.executeUpdate();
 %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+    <% if (a > 0) { %>
+        <script>
+            alert("Successfully Saved");
+             window.location = 'admin.jsp';
+        </script>
+    <% } else { %>
+        <script>
+            alert("Error Occurred");
+        </script>
+    <% } %>
+</body>
+</html>

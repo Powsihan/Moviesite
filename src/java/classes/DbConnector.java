@@ -13,14 +13,14 @@ import java.sql.*;
  */
 public class DbConnector {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/bookreview";
-    private static final String DBUSER = "testuser";
-    private static final String DBPW = "testuser";
-    private static final String DRIVER = "com.mysql.jdbc.Driver";
+    final static String URL = "jdbc:mysql://localhost:3306/moviesite";
+    final static String DB_USER = "root";
+    final static String DB_PW = "";
+    final static String DRIVER = "com.mysql.jdbc.Driver";
 
     public static Connection getConnection() throws Exception {
         Class.forName(DRIVER);
-        Connection con = DriverManager.getConnection(URL, DBUSER, DBPW);
+        Connection con = DriverManager.getConnection(URL, DB_USER, DB_PW);
         return con;
     }
 }
