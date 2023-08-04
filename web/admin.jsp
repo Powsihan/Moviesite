@@ -1,17 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.sql.*, java.io.*" %>
-<%@ page isELIgnored="false" %>
-<%@ page trimDirectiveWhitespaces="true" %>
-<%@ page session="false" %>
-<%@ page language="java" pageEncoding="UTF-8" %>
-<%@ page contentType="text/html; charset=UTF-8" %>
-<%@ page import="java.sql.*" %>
-<%@ page import="java.io.*" %>
-<%@ page import="javax.servlet.*" %>
-<%@ page import="javax.servlet.http.*" %>
-<%@ page import="javax.servlet.annotation.*" %>
-<%@ page import="java.util.*" %>
-<%@ page import="java.text.*" %>
+<%@page import="java.sql.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page session="true" %>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -24,7 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <!-- SweetAlert CDN -->
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
 
 </head>
 
@@ -35,7 +25,7 @@
         <hr>
         <h4 class="text-center">Book Add</h4>
         <!-- Once the form is submitted, all the form data is forwarded to InsertBooks.jsp -->
-        <form action="InsertBooks.jsp" method="post">
+        <form action="./InsertBook.jsp" method="post">
             <table class="table table-bordered mt-4">
                 <tr>
                     <td>Enter ISBN :</td>
@@ -85,31 +75,7 @@
     <br><br>
     <hr>
     <h4 class="text-center"> All Book Details</h4>
-
     <div class="container mt-5">
-        <%-- JSP Code to retrieve and display book details from the database --%>
-        <%@ page import="java.sql.*" %>
-        <%
-            String dbUrl = "jdbc:mysql://localhost:3306/bookreview"; // Replace with your database URL
-            String dbUser = "root"; // Replace with your database username
-            String dbPassword = ""; // Replace with your database password
-
-            Connection connection = null;
-            ResultSet resultSet = null;
-
-            try {
-                Class.forName("com.mysql.jdbc.Driver");
-                connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
-
-                String query = "select * from book";
-                Statement statement = connection.createStatement();
-                resultSet = statement.executeQuery(query);
-            } catch (ClassNotFoundException | SQLException e) {
-                e.printStackTrace();
-                // Handle database connection errors
-            }
-        %>
-
         <table class="table table-bordered mt-4">
             <tr>
                 <th>No</th>
@@ -120,9 +86,24 @@
                 <th>Author</th>
                 <th>Review</th>
             </tr>
-            <%-- Loop through the result set and display each row --%>
-            <% int rowNumber = 1;
-                while (resultSet.next()) {
+            <%
+                String dbUrl = "jdbc:mysql://localhost:3306/bookreview"; // Replace with your database URL
+                String dbUser = "root"; // Replace with your database username
+                String dbPassword = ""; // Replace with your database password
+
+                Connection connection = null;
+                ResultSet resultSet = null;
+
+                try {
+                    Class.forName("com.mysql.jdbc.Driver");
+                    connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
+
+                    String query = "select * from book";
+                    Statement statement = connection.createStatement();
+                    resultSet = statement.executeQuery(query);
+
+                    int rowNumber = 1;
+                    while (resultSet.next()) {
             %>
                 <tr>
                     <td><%= rowNumber++ %></td>
@@ -133,15 +114,32 @@
                     <td><%= resultSet.getString("Author") %></td>
                     <td><%= resultSet.getString("Review") %></td>
                 </tr>
-            <% } %>
+            <%
+                    }
+                } catch (ClassNotFoundException | SQLException e) {
+                    e.printStackTrace();
+                    // Handle database connection errors
+                } finally {
+                    if (resultSet != null) {
+                        try {
+                            resultSet.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    if (connection != null) {
+                        try {
+                            connection.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            %>
         </table>
     </div>
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <!-- SweetAlert CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
-
 </body>
 
 </html>
-

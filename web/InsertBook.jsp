@@ -1,9 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.sql.*, java.io.*" %>
+<%@ page import="java.sql.*" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+
 <%
     String dbUrl = "jdbc:mysql://localhost:3306/bookreview"; // Replace with your database URL
     String dbUser = "root"; // Replace with your database username
     String dbPassword = ""; // Replace with your database password
+
+    String isbn = request.getParameter("isbn");
+    String title = request.getParameter("title");
+    String image = request.getParameter("image"); // Assuming you handle the image upload separately
+    String publication = request.getParameter("publication");
+    String author = request.getParameter("author");
+    String review = request.getParameter("review");
+    String category = request.getParameter("categories");
 
     Connection connection = null;
     PreparedStatement preparedStatement = null;
@@ -12,46 +21,38 @@
         Class.forName("com.mysql.jdbc.Driver");
         connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
 
-        // Retrieve form data
-        String isbn = request.getParameter("isbn");
-        String title = request.getParameter("title");
-        String publicationDate = request.getParameter("publication");
-        String author = request.getParameter("author");
-        String review = request.getParameter("review");
-        String categories = request.getParameter("categories");
-
-        // Upload image to the database (assuming image is uploaded via form)
-        Part imagePart = request.getPart("image");
-        InputStream imageStream = imagePart.getInputStream();
-
-        // Prepare the INSERT query
-        String query = "INSERT INTO book (ISBN, Title, Publication_Date, Author, Review, Categories, Image) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String query = "INSERT INTO book (ISBN, Title, Image, Publication_Date, Author, Review, Categories) VALUES (?, ?, ?, ?, ?, ?, ?)";
         preparedStatement = connection.prepareStatement(query);
-
-        // Set parameters
         preparedStatement.setString(1, isbn);
         preparedStatement.setString(2, title);
-        preparedStatement.setString(3, publicationDate);
-        preparedStatement.setString(4, author);
-        preparedStatement.setString(5, review);
-        preparedStatement.setString(6, categories);
-        preparedStatement.setBlob(7, imageStream);
+        preparedStatement.setString(3, image);
+        preparedStatement.setString(4, publication);
+        preparedStatement.setString(5, author);
+        preparedStatement.setString(6, review);
+        preparedStatement.setString(7, category);
 
-        // Execute the INSERT query
-        int rowsInserted = preparedStatement.executeUpdate();
+        int rowsAffected = preparedStatement.executeUpdate();
 
-        // Close the PreparedStatement
-        preparedStatement.close();
-
-        // Redirect to the success page or display a success message
-        response.sendRedirect("success.jsp"); // Replace "success.jsp" with your desired success page URL
-    } catch (ClassNotFoundException | SQLException | IOException e) {
+        // Check if the book was inserted successfully
+        if (rowsAffected > 0) {
+            // Redirect back to the admin.jsp page with a success message
+            response.sendRedirect("admin.jsp?message=success");
+        } else {
+            // Redirect back to the admin.jsp page with an error message
+            response.sendRedirect("admin.jsp?message=error");
+        }
+    } catch (ClassNotFoundException | SQLException e) {
         e.printStackTrace();
         // Handle database connection or insertion errors
-        // Redirect to an error page or display an error message
-        response.sendRedirect("error.jsp"); // Replace "error.jsp" with your desired error page URL
+        response.sendRedirect("admin.jsp?message=error");
     } finally {
-        // Close the database connection after use
+        if (preparedStatement != null) {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
         if (connection != null) {
             try {
                 connection.close();
