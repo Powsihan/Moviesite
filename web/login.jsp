@@ -1,3 +1,11 @@
+<%-- 
+    Document   : login
+    Created on : Aug 4, 2023, 10:22:27 AM
+    Author     : sasit
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +21,7 @@
     />
 
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="../Styles/login.css" />
+    <link rel="stylesheet" href="./Styles/login.css" />
     <!-- ----------------------------------------------------------------- -->
     <!-- font awesome link -->
     <link
@@ -28,13 +36,13 @@
 
     <script>
       function togglepage() {
-        location.href = "../Pages/signin.html";
+        location.href = "./signin.jsp";
       }
     </script>
   </head>
   <body>
     <div class="auth-body">
-      <img src="../images/login_background.jpg" class="login-bg" />
+        <img src="./images/login-background.jpg" class="login-bg" />
       <div class="container auth">
         <div class="container left">
           <h1>SIGN IN</h1>
@@ -77,3 +85,4 @@
     </div>
   </body>
 </html>
+
