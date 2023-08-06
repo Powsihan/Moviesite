@@ -9,6 +9,7 @@
     <!-- <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'> -->
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./Styles/Categories.css">
+    <link rel="stylesheet" href="./Styles/HeaderFooter.css">
     <!-- ----------------------------------------------------------------- -->
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -33,10 +34,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-color navvr fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color navvr fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand logog" href="./index.html"><img src="/images/logo.png" alt="logo" style="height:50px; width: 80px;"></a>
+            <a class="navbar-brand logog" href="./index.html"><img src="./images/logo.png" alt="logo" style="height:50px; width: 100px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +58,9 @@
                     </li>
                 </ul>
                 <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2 bg-dark text-light glowing-border w-200 siz" type="search" placeholder="Search..." required aria-label="Search">
-                    <button class="btn btn-block btn-lg glow-button btn-dark" type="submit"><i
-                            class="fa-solid fa-magnifying-glass fa-beat fa-lg"></i></button>
+                    <input class="form-control me-2 bg-light glowing-border w-200 siz" type="search" placeholder="Search..." required aria-label="Search">
+                    <button class="btn btn-block btn-lg glow-button btn-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass  fa-lg"></i></button>
                 </form>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-but">
@@ -81,7 +82,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-auto ">
-                    <h3 class="me-2 hed">Adventures</h3>
+                    <h3 class="me-2 hed">Historical</h3>
                 </div>
                 <div class="col-auto text-right ">
                     <a class="btn btn-primary me-2" href="#carouselExampleIndicators1" role="button" data-bs-slide="prev">
@@ -102,7 +103,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-3.webp" class="img-fluid" alt="">
+                                                    <img src="./images/historical/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -130,7 +131,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-2.webp" class="img-fluid" alt="Headphone">
+                                                    <img src="./images/historical/ancient-greek-history-book-cover-template-design-27615fd8ac9d553cd270bed584d385f8.jpg" class="img-fluid" alt="Headphone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -158,7 +159,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-1.webp" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/historical/book-cover-about-life-design-template-ba9c7b3bec3154eb9d534e5a865bf662.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -186,7 +187,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon" id="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-4.webp" class="img-fluid" alt="Nikon">
+                                                    <img src="./images/historical/copy-of-norse-mythological-book-cover-design-template-cbd3249b5a979a599470b6a2d0297052.jpg" class="img-fluid" alt="Nikon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -218,7 +219,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/sci-fi-movie-poster-template-design-e6bc852475e22073a9cb3a1abc766255.jpg" class="img-fluid" alt="Play Station">
+                                                    <img src="./images/historical/egyptian-history-book-cover-design-kindle-template-667f6bee0169950643c88e90bdc513ed.jpg" class="img-fluid" alt="Play Station">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <div class="thumb-content">
@@ -248,7 +249,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/the-power-of-respect-design-template-762ca849f3be3afdd659f77a98ac8ed0.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/historical/fantasy-adventure-book-cover-design-template-33853fe3b0f3f4403a224233e5b16e11.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -276,7 +277,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/the-respect-of-power-design-template-f69eba7b7bcfa08680206484ac348255.jpg" class="img-fluid" alt="Speaker">
+                                                    <img src="./images/historical/fantasy-book-cover-template-design-503124a16cf2b0c8aefe8b145970feac.jpg" class="img-fluid" alt="Speaker">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -304,7 +305,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/the-squirrel-dances-at-midnight-design-template-be87fad2ceaf33cf0f1ac43077cd289d.jpg" class="img-fluid" alt="Galaxy">
+                                                    <img src="./images/historical/gff.jpg" class="img-fluid" alt="Galaxy">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -336,7 +337,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-6.webp" class="img-fluid" alt="iPhone">
+                                                    <img src="./images/historical/kindle,-book-covers-design-template-0d870083ceffa87adb0e22c71d7db38d.jpg" class="img-fluid" alt="iPhone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -364,7 +365,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-7.webp" class="img-fluid" alt="Canon">
+                                                    <img src="./images/historical/mystery-story-book-cover-design-template-fbe84584c2d9d8df9f17908d512018cb.jpg" class="img-fluid" alt="Canon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -392,7 +393,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-9.webp" class="img-fluid" alt="Pixel">
+                                                    <img src="./images/historical/rtrt.jpg" class="img-fluid" alt="Pixel">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -420,7 +421,7 @@
                                             <div class="thumb-wrapper">
                                                 <!-- <span class="wish-icon"><i class="fa fa-heart-o"></i></span> -->
                                                 <div class="img-box">
-                                                    <img src="../images/Adventure/image-5.webp" class="img-fluid" alt="Watch">
+                                                    <img src="./images/historical/vintage-book-cover-design-template-0f7f2cf1fda9f2f7bf4d7ffdba2fca30.jpg" class="img-fluid" alt="Watch">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -481,7 +482,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/black-biography-book-cover-design-template-943041d5d6abd22ceaa194a924203e8c.jpg" class="img-fluid" alt="">
+                                                    <img src="./images/fiction-img/black-biography-book-cover-design-template-943041d5d6abd22ceaa194a924203e8c.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Sofia</h4>
@@ -509,7 +510,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/black-kindle-book-cover-design-template-8d93f3e2cf8c613c523388f921fb2d0d.jpg" class="img-fluid" alt="Headphone">
+                                                    <img src="./images/fiction-img/black-kindle-book-cover-design-template-8d93f3e2cf8c613c523388f921fb2d0d.jpg" class="img-fluid" alt="Headphone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>PU</h4>
@@ -537,7 +538,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/blue-christanity-book-cover-design-template-af493f89bc8ef8b683e3487a86be6d2a.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/fiction-img/blue-christanity-book-cover-design-template-af493f89bc8ef8b683e3487a86be6d2a.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Knowing God</h4>
@@ -565,7 +566,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf.jpg" class="img-fluid" alt="Nikon">
+                                                    <img src="./images/fiction-img/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf.jpg" class="img-fluid" alt="Nikon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Memory</h4>
@@ -597,7 +598,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/fairy-dragon-book-cover-design-template-c7ca69cf28016950d9d6f4ffa8af01c8.jpg" class="img-fluid" alt="Play Station">
+                                                    <img src="./images/fiction-img/fairy-dragon-book-cover-design-template-c7ca69cf28016950d9d6f4ffa8af01c8.jpg" class="img-fluid" alt="Play Station">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <div class="thumb-content">
@@ -627,7 +628,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/fantasy-fiction-book-cover-design-template-6cde0f76e3bcb214fe1eedfead18fef4.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/fiction-img/fantasy-fiction-book-cover-design-template-6cde0f76e3bcb214fe1eedfead18fef4.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Ice & Fire</h4>
@@ -655,7 +656,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/motivational-self-help-book-cover-design-template-549362a7c9d568279e866eb81510239c.jpg" class="img-fluid" alt="Speaker">
+                                                    <img src="./images/fiction-img/motivational-self-help-book-cover-design-template-549362a7c9d568279e866eb81510239c.jpg" class="img-fluid" alt="Speaker">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>RAW</h4>
@@ -683,7 +684,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/self-help-non-fiction-book-cover-design-template-c570943c147db3ea1d5b4465a333756a.jpg" class="img-fluid" alt="Galaxy">
+                                                    <img src="./images/fiction-img/self-help-non-fiction-book-cover-design-template-c570943c147db3ea1d5b4465a333756a.jpg" class="img-fluid" alt="Galaxy">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Time</h4>
@@ -715,7 +716,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/mazed.jpg" class="img-fluid" alt="iPhone">
+                                                    <img src="./images/fiction-img/mazed.jpg" class="img-fluid" alt="iPhone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Mazed</h4>
@@ -743,7 +744,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/invisible.jpg" class="img-fluid" alt="Canon">
+                                                    <img src="./images/fiction-img/invisible.jpg" class="img-fluid" alt="Canon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Invisible</h4>
@@ -771,7 +772,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/triumph-self-help-non-fiction-book-cover-design-template-d766701badb7cb128d02295267b5e96b.jpg" class="img-fluid" alt="Pixel">
+                                                    <img src="./images/fiction-img/triumph-self-help-non-fiction-book-cover-design-template-d766701badb7cb128d02295267b5e96b.jpg" class="img-fluid" alt="Pixel">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>PT</h4>
@@ -799,7 +800,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/dream mesina.jpg" class="img-fluid" alt="Watch">
+                                                    <img src="./images/fiction-img/dream mesina.jpg" class="img-fluid" alt="Watch">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Dream Machina</h4>
@@ -860,7 +861,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/black-and-white-thriller-book-cover-novel-des-design-template-ba14450b9823edcf100da08e30c7ee8b.jpg" class="img-fluid" alt="">
+                                                    <img src="./images/horror-img/black-and-white-thriller-book-cover-novel-des-design-template-ba14450b9823edcf100da08e30c7ee8b.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -888,7 +889,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/black-halloween-book-cover-template-design-c19bb4f1c7e92b1a276f8a9c780f1033.jpg" class="img-fluid" alt="Headphone">
+                                                    <img src="./images/horror-img/black-halloween-book-cover-template-design-c19bb4f1c7e92b1a276f8a9c780f1033.jpg" class="img-fluid" alt="Headphone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -916,7 +917,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/black-halloween-kindle-cover-template-design-e7d237a80c29cd98817d97734d3e299f.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/horror-img/black-halloween-kindle-cover-template-design-e7d237a80c29cd98817d97734d3e299f.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -944,7 +945,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/dark-horror-book-cover-design-template-74f0b0cc1c4abb0a8d8adffc5c624357.jpg" class="img-fluid" alt="Nikon">
+                                                    <img src="./images/horror-img/dark-horror-book-cover-design-template-74f0b0cc1c4abb0a8d8adffc5c624357.jpg" class="img-fluid" alt="Nikon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -976,7 +977,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/deadly-warehouse-horror-book-cover-design-template-4e6067be6988d5e3cafbd5b57a19df91.jpg" class="img-fluid" alt="Play Station">
+                                                    <img src="./images/horror-img/deadly-warehouse-horror-book-cover-design-template-4e6067be6988d5e3cafbd5b57a19df91.jpg" class="img-fluid" alt="Play Station">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <div class="thumb-content">
@@ -1006,7 +1007,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/grey-halloween-kindle-cover-template-design-4d053270245906872cef9cb99abd1a67.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/horror-img/grey-halloween-kindle-cover-template-design-4d053270245906872cef9cb99abd1a67.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1034,7 +1035,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/haunted-house-horror-book-cover-design-template-fd3a8016a4128af962549c3c40190270.jpg" class="img-fluid" alt="Speaker">
+                                                    <img src="./images/horror-img/haunted-house-horror-book-cover-design-template-fd3a8016a4128af962549c3c40190270.jpg" class="img-fluid" alt="Speaker">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1062,7 +1063,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/deadly-warehouse-horror-book-cover-design-template-4e6067be6988d5e3cafbd5b57a19df91.jpg" class="img-fluid" alt="Galaxy">
+                                                    <img src="./images/horror-img/deadly-warehouse-horror-book-cover-design-template-4e6067be6988d5e3cafbd5b57a19df91.jpg" class="img-fluid" alt="Galaxy">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1094,7 +1095,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/murder-mystery-book-cover-design-template-2a1a3ff53d7a9d851046c5e1fdf3943f.jpg" class="img-fluid" alt="iPhone">
+                                                    <img src="./images/horror-img/murder-mystery-book-cover-design-template-2a1a3ff53d7a9d851046c5e1fdf3943f.jpg" class="img-fluid" alt="iPhone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1122,7 +1123,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/orange-halloween-kindle-cover-design-template-205384db0e35dc94e8130fa26114d048.jpg" class="img-fluid" alt="Canon">
+                                                    <img src="./images/horror-img/orange-halloween-kindle-cover-design-template-205384db0e35dc94e8130fa26114d048.jpg" class="img-fluid" alt="Canon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1150,7 +1151,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/horror-img/paranormal-horror-book-cover-design-template-ace583d35540c6c8da22f0d75d45f614.jpg" class="img-fluid" alt="Pixel">
+                                                    <img src="./images/horror-img/paranormal-horror-book-cover-design-template-ace583d35540c6c8da22f0d75d45f614.jpg" class="img-fluid" alt="Pixel">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1178,7 +1179,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/fiction-img/vintage-book-cover-design-template-0f7f2cf1fda9f2f7bf4d7ffdba2fca30.jpg" class="img-fluid" alt="Watch">
+                                                    <img src="./images/fiction-img/vintage-book-cover-design-template-0f7f2cf1fda9f2f7bf4d7ffdba2fca30.jpg" class="img-fluid" alt="Watch">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1240,7 +1241,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/ebook-cover-romance-design-template-5bb3e22ad579c40009106791cd696486.jpg" class="img-fluid" alt="">
+                                                    <img src="./images/love/ebook-cover-romance-design-template-5bb3e22ad579c40009106791cd696486.jpg" class="img-fluid" alt="">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1268,7 +1269,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/kindle-book-cover-design-template-35ef6710c1597a389b7ec807805b9ff4.jpg" class="img-fluid" alt="Headphone">
+                                                    <img src="./images/love/kindle-book-cover-design-template-35ef6710c1597a389b7ec807805b9ff4.jpg" class="img-fluid" alt="Headphone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1296,7 +1297,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/kindle-book-cover-design-template-d39a40a2dc76266a8a3ab1bc81acfcb1.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/love/kindle-book-cover-design-template-d39a40a2dc76266a8a3ab1bc81acfcb1.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1324,7 +1325,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/love-book-cover-or-movie-flyer-template-design-b25f4ec81d5fb7242bb37984ddd82f9a.jpg" class="img-fluid" alt="Nikon">
+                                                    <img src="./images/love/love-book-cover-or-movie-flyer-template-design-b25f4ec81d5fb7242bb37984ddd82f9a.jpg" class="img-fluid" alt="Nikon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1356,7 +1357,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/medieval-romance-ebook-wattpad-cover-design-template-b4f7d9a22df6f29d2a5e48d55f01bb37.jpg" class="img-fluid" alt="Play Station">
+                                                    <img src="./images/love/medieval-romance-ebook-wattpad-cover-design-template-b4f7d9a22df6f29d2a5e48d55f01bb37.jpg" class="img-fluid" alt="Play Station">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <div class="thumb-content">
@@ -1386,7 +1387,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/romance-novel-ebook-kindle-cover-design-template-9ab0a63b3ab9741d079c219f9681c7ab.jpg" class="img-fluid" alt="Macbook">
+                                                    <img src="./images/love/romance-novel-ebook-kindle-cover-design-template-9ab0a63b3ab9741d079c219f9681c7ab.jpg" class="img-fluid" alt="Macbook">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1414,7 +1415,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/romantic-love-book-cover-design-template-96659088739c38149b0bc4d2a0c67495.jpg" class="img-fluid" alt="Speaker">
+                                                    <img src="./images/love/romantic-love-book-cover-design-template-96659088739c38149b0bc4d2a0c67495.jpg" class="img-fluid" alt="Speaker">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1442,7 +1443,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/somebody-to-love-book-cover-design-template-5d4024f2982f3c81046e1fd91c755716.jpg" class="img-fluid" alt="Galaxy">
+                                                    <img src="./images/love/somebody-to-love-book-cover-design-template-5d4024f2982f3c81046e1fd91c755716.jpg" class="img-fluid" alt="Galaxy">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1474,7 +1475,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/victorian-earl-historical-romance-book-header-design-template-29bbe639562dfeee267918a5f7970553.jpg" class="img-fluid" alt="iPhone">
+                                                    <img src="./images/love/victorian-earl-historical-romance-book-header-design-template-29bbe639562dfeee267918a5f7970553.jpg" class="img-fluid" alt="iPhone">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1502,7 +1503,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/victorian-historical-romance-novel-header-design-template-8174f26f5d44c590137ccbea8052bfc6.jpg" class="img-fluid" alt="Canon">
+                                                    <img src="./images/love/victorian-historical-romance-novel-header-design-template-8174f26f5d44c590137ccbea8052bfc6.jpg" class="img-fluid" alt="Canon">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1530,7 +1531,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/village-love-story-historical-romance-header-design-template-b3c737c884a9959c425f53e924d5ff8d.jpg" class="img-fluid" alt="Pixel">
+                                                    <img src="./images/love/village-love-story-historical-romance-header-design-template-b3c737c884a9959c425f53e924d5ff8d.jpg" class="img-fluid" alt="Pixel">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1558,7 +1559,7 @@
                                             <div class="thumb-wrapper">
                                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                                 <div class="img-box">
-                                                    <img src="../images/love/wintery-romance-novel-ebook-wattpad-cover-design-template-e19d0eb10c4e2ad266e984bea50c76d5.jpg" class="img-fluid" alt="Watch">
+                                                    <img src="./images/love/wintery-romance-novel-ebook-wattpad-cover-design-template-e19d0eb10c4e2ad266e984bea50c76d5.jpg" class="img-fluid" alt="Watch">
                                                 </div>
                                                 <div class="thumb-content">
                                                     <h4>Apple iPad</h4>
@@ -1597,22 +1598,22 @@
 
 
     <!----------- Footer ------------>
-    <footer class="footer-bs ">
+    <footer class="footer-bs">
         <div class="row ">
             <div class="col-md-3 footer-brand animated fadeInLeft ">
                 <img src="/images/logo.png " alt="logo " style="height:70px; width: 110px; ">
                 <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                <p>© 2007 ReadO, All rights reserved</p>
+                <p>� 2007 CinesynC, All rights reserved</p>
             </div>
             <div class="col-md-4 footer-nav animated fadeInUp ">
-                <h4>Menu —</h4>
+                <h4>Menu ?</h4>
 
                 <div class="col-md-6 ">
                     <ul class="list ">
-                        <li><a href="../Pages/Home.php"><i class="fa-solid fa-house icoon "></i>Home</a></li>
-                        <li><a href="../Pages/About_us.php"><i class="fa-solid fa-hands-bound icoon "></i>About Us</a></li>
-                        <li><a href="../Pages/Categories.php"><i class="fa-solid fa-book icoon "></i>Categories</a></li>
-                        <li><a href="../Pages/Contact_us.php"><i class="fa-solid fa-headset icoon "></i>Contact Us</a></li>
+                        <li><a href="./index.html"><i class="fa-solid fa-house icoon "></i>Home</a></li>
+                        <li><a href="./About_us.jsp"><i class="fa-solid fa-hands-bound icoon "></i>About Us</a></li>
+                        <li><a href="./Categories.jsp"><i class="fa-solid fa-book icoon "></i>Categories</a></li>
+                        <li><a href="./Contact_us.jsp"><i class="fa-solid fa-headset icoon "></i>Contact Us</a></li>
                         <li><a href="# "><i class="fa-solid fa-chalkboard-user icoon "></i>Terms & Condition</a></li>
                         <li><a href="# "><i class="fa-solid fa-lock icoon "></i>Privacy Policy</a></li>
                     </ul>
@@ -1630,13 +1631,13 @@
             </div>
             <div class="col-md-3 footer-ns animated fadeInRight ">
                 <h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>A rover wearing a fuzzy suit doesn?t alarm the real penguins</p>
                 <p>
                     <div class="input-group ">
-                        <input class="form-control me-2 bg-dark text-light glowing-border w-200 siz " type="search " placeholder="Type here..." required aria-label="Search ">
+                        <input class="form-control me-2 bg-light  glowing-border w-200 siz " type="search " placeholder="Type here..." required aria-label="Search ">
                         <span class="input-group-btn ">
-                        <button class="btn btn-block btn-lg glow-button btn-dark " type="submit "><i
-                                class="fa-solid fa-envelope fa-beat fa-xl "></i></button>
+                        <button class="btn btn-block btn-lg glow-button  " type="submit "><i
+                                class="fa-solid fa-envelope  fa-xl "></i></button>
                     </span>
                     </div>
                     <!-- /input-group -->
@@ -1644,7 +1645,7 @@
             </div>
         </div>
         <hr>
-        <span class="align-items-center justify-content-center d-flex ">© 2007 ReadO, All rights reserved</span>
+        <span class="align-items-center justify-content-center d-flex ">� 2007 CinesynC, All rights reserved</span>
     </footer>
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
