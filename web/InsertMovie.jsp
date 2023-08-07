@@ -10,23 +10,23 @@
 <%--<%@page import="classes.MD5" %>--%>
 <%@page import="java.sql.*" %>
 <%
-    String isbn = request.getParameter("isbn");
+    String id = request.getParameter("id");
     String title = request.getParameter("title");
     String image = request.getParameter("image"); // Assuming you handle the image upload separately
     String publication = request.getParameter("publication");
-    String author = request.getParameter("author");
+    String director = request.getParameter("director");
     String review = request.getParameter("review");
     String category = request.getParameter("categories");
 //    String password = MD5.getMd5(request.getParameter("password"));
 
-    String query = "INSERT INTO book (ISBN, Title, Image, Publication_Date, Author, Review, Categories) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    String query = "INSERT INTO movie (Movie_ID, Movie_Name, Image, Release_Date, Director, Review, Categories) VALUES (?, ?, ?, ?, ?, ?, ?)";
     Connection con = DbConnector.getConnection();
     PreparedStatement pstmt = con.prepareStatement(query);
-    pstmt.setString(1, isbn);
+    pstmt.setString(1, id);
     pstmt.setString(2, title);
     pstmt.setString(3, image);
     pstmt.setString(4, publication);
-    pstmt.setString(5, author);
+    pstmt.setString(5, director);
     pstmt.setString(6, review);
     pstmt.setString(7, category);
     int a = pstmt.executeUpdate();
