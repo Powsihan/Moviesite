@@ -36,16 +36,18 @@
 
 
         <div class="content">
-            <h1 class="text-center">Admin Panel</h1>
-            <br>
-            <hr>
-            <h4 class="text-center font-weight-bold">Search Movies</h4>
-            <form action="./searchResults.jsp" class="mt-4" method="post" >
-                <div class="input-group">
-                    <input type="text" name="search" class="form-control" placeholder="Search Movie by title, Category, Director, or Movie_ID">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </div>
-            </form>
+            <div class="container mt-5">
+                <h1 class="text-center h1hed">Admin Panel</h1>
+                <br>
+                <hr>
+                <h4 class="text-center font-weight-bold">Search Movies</h4>
+                <form action="./searchResults.jsp" class="mt-4" method="post" >
+                    <div class="input-group">
+                        <input type="text" name="search" class="form-control" placeholder="Search Movie by title, Category, Director, or Movie_ID">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
 

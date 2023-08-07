@@ -47,6 +47,11 @@ div.content {
   div.content {margin-left: 0;}
 }
 
+.h1hed{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000066;
+}
 
 @media screen and (max-width: 400px) {
   .sidebar a {

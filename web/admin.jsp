@@ -42,7 +42,7 @@
 
         <div class="content">
             <div class="container mt-5">
-                <h1 class="text-center">Admin Panel</h1>
+                <h1 class="text-center h1hed">Admin Panel</h1>
                 <br>
                 <hr>
                 <h4 class="text-center">Movie Add</h4>
