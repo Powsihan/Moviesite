@@ -1,3 +1,11 @@
+<%-- 
+    Document   : signin
+    Created on : Aug 4, 2023, 10:23:04 AM
+    Author     : sasit
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="../Styles/login.css">
+    <link rel="stylesheet" href="./Styles/login.css">
     <!-- ----------------------------------------------------------------- -->
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -17,13 +25,13 @@
     <title>SignIn|CinesynC</title>
      <script>
       function togglepage() {
-        location.href = "../Pages/login.html";
+        location.href = "./login.jsp";
       }
     </script>
 </head>
 <body>
     <div class="auth-body">
-        <img src="../images/login_background.jpg" class="login-bg" />
+        <img src="./images/login-background.jpg" class="login-bg" />
         <div class="container auth signin">
           <div class="container left">
             <h1>Create Accout</h1>
