@@ -40,7 +40,7 @@
             <br>
             <hr>
             <h4 class="text-center font-weight-bold">Search Movies</h4>
-            <form class="mt-4" method="post" action="./searchResults.jsp">
+            <form action="./searchResults.jsp" class="mt-4" method="post" >
                 <div class="input-group">
                     <input type="text" name="search" class="form-control" placeholder="Search Movie by title, Category, Director, or Movie_ID">
                     <button type="submit" class="btn btn-primary">Search</button>

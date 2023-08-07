@@ -256,7 +256,7 @@
                             </div>
                             <div class="member-info">
                                 <h4>Powsi</h4>
-                                <span>Chief Executive Officer</span>
+                                <span>Developer</span>
                             </div>
                         </div>
                     </div>
@@ -264,7 +264,7 @@
                     <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
                         <div class="member" data-aos="fade-up" data-aos-delay="200">
                             <div class="member-img">
-                                <img src="./images/Powsi.jpg" class="img-fluid" alt="">
+                                <img src="./images/Sasith.jpeg" class="img-fluid" alt="">
                                 <div class="social">
                                     <a href="# "><i class="fa-brands fa-facebook"></i></a>
                                     <a href="# "><i class="fa-brands fa-twitter"></i></a>
@@ -273,8 +273,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Product Manager</span>
+                                <h4>Sasith</h4>
+                                <span>Developer</span>
                             </div>
                         </div>
                     </div>
@@ -291,8 +291,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>William </h4>
-                                <span>CTO</span>
+                                <h4>Dinuk </h4>
+                                <span>Developer</span>
                             </div>
                         </div>
                     </div>
@@ -309,8 +309,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
+                                <h4>Dinithi</h4>
+                                <span>Developer</span>
                             </div>
                         </div>
                     </div>
@@ -326,8 +326,8 @@
                                 </div>
                             </div>
                             <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
+                                <h4>Joshiga</h4>
+                                <span>Developer</span>
                             </div>
                         </div>
                     </div>

@@ -77,7 +77,7 @@
                 <table class="table table-bordered mt-4">
                     <tr>
                         <td>Enter Movie_ID :</td>
-                        <td><input type="hidden" name="movie_id" class="form-control" value="<%= searchMovieID%>">
+                        <td><input type="text" name="movie_id" class="form-control" value="<%= searchMovieID%>">
                         </td>
                     </tr>
                     <tr>
@@ -115,8 +115,8 @@
                         <td></td>
                         <td>
                             <input type="submit" value="Update" name="action" class="btn btn-primary">
-                            <input type="submit" value="Delete" name="action" class="btn btn-primary">
-                            <input type="reset" value="Reset" class="btn btn-secondary">
+                            <input type="submit" value="Delete" name="action" class="btn btn-danger">
+                            <a href="./update.jsp" class="btn btn-secondary">Cancel</a>
                         </td>
                     </tr>
                 </table>

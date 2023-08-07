@@ -47,7 +47,7 @@
                 <hr>
                 <h4 class="text-center">Movie Add</h4>
                 <!-- Once the form is submitted, all the form data is forwarded to InsertBooks.jsp -->
-                <form action="./InsertBook.jsp" method="post">
+                <form action="./InsertMovie.jsp" method="post">
                     <table class="table table-bordered mt-4">
                         <tr>
                             <td>Enter Movie_ID :</td>
