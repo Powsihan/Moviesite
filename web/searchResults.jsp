@@ -16,7 +16,7 @@
 <body>
 <%
     String searchQuery = request.getParameter("search");
-    if (searchQuery != null && !searchQuery.trim().isEmpty()) {
+    if (searchQuery != null && !searchQuery.isEmpty()) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;

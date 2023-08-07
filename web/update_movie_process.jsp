@@ -60,19 +60,19 @@
 
         <script>
             alert("Movie details updated successfully");
-            window.location = 'admin.jsp';
+            window.location = 'update.jsp';
         </script>
         <% } else if (action.equals("Delete")) {%>
         <script>
             alert("Movie details Deleted successfully");
-            window.location = 'admin.jsp';
+            window.location = 'update.jsp';
         </script>
         <% }
                    } else {%>
 
         <script>
             alert("Failed to update or delete movie details.");
-            window.location = 'admin.jsp';
+            window.location = 'update.jsp';
         </script>
         <% }%>
 
