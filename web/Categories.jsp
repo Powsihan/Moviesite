@@ -120,7 +120,7 @@
                                                         <p class="card-text">ISBN: 1234567890</p>
                                                         <p class="card-text">Publication Date: 01.01.2023</p>
                                                         <div class="revbtn">
-                                                            <a href="./Review.jsp" class="btn btn-primary">Review</a>
+                                                            <a href="./Reviewpage.jsp" class="btn btn-primary">Review</a>
                                                             <a href="#" class="btn btn-primary">Buy</a>
                                                         </div>
                                                     </div>
@@ -1601,7 +1601,7 @@
         <footer class="footer-bs">
             <div class="row ">
                 <div class="col-md-3 footer-brand animated fadeInLeft ">
-                    <img src="/images/logo.png " alt="logo " style="height:70px; width: 110px; ">
+                    <img src="./images/logo.png " alt="logo " style="height:70px; width: 110px; ">
                     <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
                     <p>© 2007 CinesynC, All rights reserved</p>
                 </div>
