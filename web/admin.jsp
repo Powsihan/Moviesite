@@ -32,8 +32,8 @@
 
     <body>
         <div class="sidebar">
-            <a class="active" href="#home">DashBoard</a>
-            <a href="./admin.jsp">Add Movie</a>
+            <a  href="./admin.html">DashBoard</a>
+            <a class="active" href="./admin.jsp">Add Movie</a>
             <a href="./view.jsp">View Movies</a>
             <a href="./search.jsp">Search Movies</a>
             <a href="./update.jsp">Update Movies</a>
