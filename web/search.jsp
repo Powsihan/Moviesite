@@ -27,11 +27,12 @@
     </head>
     <body>
         <div class="sidebar">
-            <a  href="./admin.html">DashBoard</a>
-            <a href="./admin.jsp">Add Movie</a>
+            <a  href="./admin.jsp">DashBoard</a>
+            <a href="./insert.jsp">Add Movie</a>
             <a href="./view.jsp">View Movies</a>
             <a class="active" href="./search.jsp">Search Movies</a>
             <a href="./update.jsp">Update Movies</a>
+            <a href="./AdminLogin.html">Log Out</a>
         </div>
 
 
