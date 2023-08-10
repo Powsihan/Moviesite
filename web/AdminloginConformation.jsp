@@ -7,6 +7,7 @@
 </head>
 <body>
     <% 
+        // Get username and password from the form
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -17,7 +18,7 @@
 
             // Query database
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM admin WHERE username=? AND password=?");
-            preparedStatement.setString(1, username);
+            preparedStatement.setString(1, username);    // Set the first parameter in the prepared statement to the username
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 

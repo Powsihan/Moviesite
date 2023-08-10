@@ -58,8 +58,7 @@
                         Class.forName("com.mysql.jdbc.Driver");
                         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/moviesite", "root", ""); // Replace "YourDataSourceName" with your actual data source name
                         stmt = conn.createStatement();
-
-                        // Query the database to get book details from the "bookreview" database
+                        
                         String query = "SELECT * FROM movie";
                         rs = stmt.executeQuery(query);
                 %>

@@ -14,6 +14,7 @@
     </head>
     <body>
         <%
+            //get datas from update form
             String action = request.getParameter("action");
             String movieID = request.getParameter("movie_id");
             String movieName = request.getParameter("name");
@@ -22,14 +23,14 @@
             String image = request.getParameter("image");
             String publication = request.getParameter("publication");
             String review = request.getParameter("review");
-            // You can retrieve other input fields as needed
+          
 
             if (action != null && movieID != null && !movieID.isEmpty()) {
                 Connection connection = null;
                 PreparedStatement preparedStatement = null;
 
                 try {
-                    // Replace with your database connection setup
+                    // establish  database connection 
                     String jdbcUrl = "jdbc:mysql://localhost:3306/moviesite";
                     String dbUser = "root";
                     String dbPassword = "";

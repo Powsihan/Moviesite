@@ -10,14 +10,14 @@
 <%--<%@page import="classes.MD5" %>--%>
 <%@page import="java.sql.*" %>
 <%
+    // get datas from insert form
     String id = request.getParameter("id");
     String title = request.getParameter("title");
-    String image = request.getParameter("image"); // Assuming you handle the image upload separately
+    String image = request.getParameter("image"); 
     String publication = request.getParameter("publication");
     String director = request.getParameter("director");
     String review = request.getParameter("review");
     String category = request.getParameter("categories");
-//    String password = MD5.getMd5(request.getParameter("password"));
 
     String query = "INSERT INTO movie (Movie_ID, Movie_Name, Image, Release_Date, Director, Review, Categories) VALUES (?, ?, ?, ?, ?, ?, ?)";
     Connection con = DbConnector.getConnection();

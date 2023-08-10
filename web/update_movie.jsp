@@ -52,7 +52,7 @@
                         ResultSet resultSet = null;
 
                         try {
-                            // Replace with your database connection setup
+                            //establish database connection 
                             String jdbcUrl = "jdbc:mysql://localhost:3306/moviesite";
                             String dbUser = "root";
                             String dbPassword = "";
@@ -72,7 +72,7 @@
                                 String publication = resultSet.getString("Release_date");
                                 String review = resultSet.getString("Review");
                                 String image = resultSet.getString("Image");
-                                // You can retrieve other fields as needed
+                               
 
                 %>
                 <form action="update_movie_process.jsp" method="post">

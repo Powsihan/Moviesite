@@ -46,7 +46,7 @@
                         ResultSet resultSet = null;
 
                         try {
-                            // Replace with your database connection setup
+                            // establish the connection
                             String jdbcUrl = "jdbc:mysql://localhost:3306/moviesite";
                             String dbUser = "root";
                             String dbPassword = "";
@@ -58,12 +58,11 @@
                             preparedStatement = connection.prepareStatement(query);
                             preparedStatement.setString(1, "%" + searchMovieID + "%"); // Search by Movie_Name
                             preparedStatement.setString(2, "%" + searchMovieID + "%"); // Search by Director
-                            preparedStatement.setString(3, "%" + searchMovieID + "%");
-                            preparedStatement.setString(4, "%" + searchMovieID + "%");// Search by Categories
+                            preparedStatement.setString(3, "%" + searchMovieID + "%");  // Search by Categories
+                            preparedStatement.setString(4, "%" + searchMovieID + "%");  // Search by MovieID
                             resultSet = preparedStatement.executeQuery();
                             if (resultSet.next()) {
 
-                                // You can retrieve other fields as needed
                 %>
                 <div style="max-height: 700px; overflow-y: scroll;">
                     <table class="table table-bordered mt-4">
@@ -81,7 +80,6 @@
 
                         <tbody>
                             <%  int rowNumber = 1;
-                                // Removed the initial resultSet.next() call to avoid skipping the first row
                                 do {
                                     String movieID = resultSet.getString("Movie_ID");
                                     String movieName = resultSet.getString("Movie_Name");
