@@ -88,27 +88,27 @@
                         <div class="infoicon">
                             <a href="# "><i class="fa-brands fa-facebook fa-2xl socialicon "></i></a>
                             <h4>Facebook: </h4>
-                            <p>ReadO</p>
+                            <p>CinesynC</p>
                         </div>
                         <div class="infoicon">
                             <i class="fa-solid fa-envelope fa-2xl socialicon "></i>
                             <h4>Email:</h4>
-                            <p>ReadO_07@hotmail.com</p>
+                            <p>CinesynC_07@hotmail.com</p>
                         </div>
                         <div class="infoicon">
                             <a href="# "><i class="fa-brands fa-instagram fa-2xl socialicon "></i></a>
                             <h4>Instragram:</h4>
-                            <p>ReadO</p>
+                            <p>CinesynC</p>
                         </div>
                         <div class="infoicon">
                             <a href="# "><i class="fa-brands fa-twitter fa-2xl socialicon "></i></a>
                             <h4>twitter:</h4>
-                            <p>ReadO_07@hotmail.com</p>
+                            <p>CinesynC_07@hotmail.com</p>
                         </div>
                         <div class="infoicon">
                             <a href="# "><i class="fa-solid fa-phone fa-2xl socialicon "></i></a>
                             <h4>Call:</h4>
-                            <p>+11 558 554 5577</p>
+                            <p>+11 558 554 5567</p>
                         </div>
                     </div>
 
@@ -149,13 +149,13 @@
     </section>
     <!-- End Contact Section -->
 
-  <!----------- Footer ------------>
+    <!----------- Footer ------------>
     <footer class="footer-bs">
         <div class="row ">
             <div class="col-md-3 footer-brand animated fadeInLeft ">
                 <img src="/images/logo.png " alt="logo " style="height:70px; width: 110px; ">
                 <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                <p>© 2007 CinesynC, All rights reserved</p>
+                <p>ï¿½ 2007 CinesynC, All rights reserved</p>
             </div>
             <div class="col-md-4 footer-nav animated fadeInUp ">
                 <h4>Menu ?</h4>
@@ -197,7 +197,7 @@
             </div>
         </div>
         <hr>
-        <span class="align-items-center justify-content-center d-flex ">© 2007 CinesynC, All rights reserved</span>
+        <span class="align-items-center justify-content-center d-flex ">ï¿½ 2007 CinesynC, All rights reserved</span>
     </footer>
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
