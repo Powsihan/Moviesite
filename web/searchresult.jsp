@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-        <title>Update Movie</title>
+        <title>Book Detail | CinesynC</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
               rel="stylesheet"
               integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
@@ -66,13 +66,13 @@
                 %>
                 <div style="max-height: 700px; overflow-y: scroll;">
                     <table class="table table-bordered mt-4">
-                        <thead style="position: sticky; top: -1px; z-index: 1;">
+                        <thead style="position: sticky; top: -1px; z-index: 1; background-color: white">
                             <tr>
                                 <th>No</th>
                                 <th style="width: 130px;">Movie_ID</th>
                                 <th>Title</th>
                                 <th>Category</th>
-                                <th>Publication_Date</th>
+                                <th>Release_Date</th>
                                 <th style="width: 100px;">Director</th>
                                 <th>Review</th>
                             </tr>
@@ -108,7 +108,7 @@
                 %>
                 <script>
                     alert("No movie found");
-                    window.location = 'update.jsp';
+                    window.location = 'search.jsp';
                 </script>
                 <%
                             }

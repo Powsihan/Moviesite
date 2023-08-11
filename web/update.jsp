@@ -25,7 +25,7 @@
             referrerpolicy="no-referrer"
             />
         <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <title>Admin Dashboard</title>
+        <title>Update| CinesynC</title>
     </head>
     <body>
         <div class="sidebar">
@@ -46,7 +46,7 @@
                 <h4 class="text-center">Movie Update</h4>
                 <form action="update_movie.jsp" method="post" class="mt-4">
                     <div class="input-group">
-                        <input type="text" name="search" class="form-control" placeholder="Search for the book by ISBN whose is going to update">
+                        <input type="text" name="search" class="form-control" placeholder="Search for the Movie by Movie_ID whose is going to update">
                         <button type="submit" class="btn btn-primary">Search</button>
                     </div>
                 </form>

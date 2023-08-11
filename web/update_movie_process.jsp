@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Update Movie Process</title>
+        <title>Update Movie | CinesynC</title>
         <script type="text/javascript">
             function showAlert(message) {
                 alert(message);

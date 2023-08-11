@@ -35,13 +35,24 @@
         <div class="container auth signin">
           <div class="container left">
             <h1>Create Accout</h1>
-            <form class="auth-form" onSubmit={handleSubmit}>
+            <form class="auth-form" action="registration.jsp" method="POST">
               <div class="form-group lft">
-                <label for="exampleInputEmail1">Name</label>
+                <label for="exampleInputEmail1">First Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  name="name"
+                  name="firstname"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter name"
+                  
+                />
+              </div>
+                <div class="form-group lft">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="lastname"
                   aria-describedby="emailHelp"
                   placeholder="Enter name"
                   

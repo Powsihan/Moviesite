@@ -1,4 +1,9 @@
+<%@page import="java.util.Base64"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.sql.*" %>
+<%--<%@ page import="javax.sql.DataSource" %>--%>
+<%@page import="classes.DbConnector"%>
+<%@page import="movies.BookDetails"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -67,7 +72,22 @@
             </div>
         </nav>
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <%
+            // Assuming you have established a database connection
+            Connection con = DbConnector.getConnection();
 
+            // Check if ISBN parameter is provided in the URL
+            String isbn = request.getParameter("isbn");
+
+            // Get book details by ISBN
+            BookDetails bookDetails = BookDetails.getBookDetailsByISBN(con, isbn);
+//                if (bookDetails != null) {
+            // Rest of your JSP code
+
+        %>
+
+
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         <section id="counts" class="counts">
             <div class="container " data-aos="fade-up">
                 <div class="section-title">
@@ -80,22 +100,22 @@
 
                     </p>
                 </div>
-
                 <div class="row no-gutters ">
-                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start " data-aos="fade-right" data-aos-delay="100"><img src="./images/horror-img/murder-mystery-book-cover-design-template-2a1a3ff53d7a9d851046c5e1fdf3943f.jpg" alt=""></div>
+                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start " data-aos="fade-right" data-aos-delay="100">
+                        <img src="data:image/jpg;charset=utf8;base64,<%=Base64.getEncoder().encodeToString(bookDetails.getImage())%>" alt=""></div>
                     <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
                         <div class="content d-flex flex-column justify-content-center review">
                             <h3 style="text-transform: uppercase;">Title :
 
                             </h3>
                             <h5 style="font-size: 26px;">Details : </h5>
-                            <p class="card-text">Movie_ID :
+                            <p class="card-text">Movie_ID :<%=bookDetails.getISBN()%>
 
                             </p>
-                            <p class="card-text">Release Date :
+                            <p class="card-text">Release Date :<%=bookDetails.getPublicationDate()%>
 
                             </p>
-                            <p class="card-text">Director :
+                            <p class="card-text">Director :<%=bookDetails.getAuthor()%>
 
                             </p>
                             <div class="star-rating">
@@ -113,16 +133,16 @@
                                 "Invisible" is a haunting and poignant work of fiction that explores the often-overlooked struggles of those who feel unseen in society. The book follows the compelling journey of a protagonist who grapples with their own invisibility, both figuratively and literally. Through the author's emotive prose and thought-provoking narrative, readers are taken on an emotional rollercoaster that sheds light on themes of identity, isolation, and the search for belonging. "Invisible" masterfully delves into the complexities of the human experience, leaving readers with a profound sense of empathy and a deeper understanding of the invisible battles fought by many. This powerful and introspective novel is a gripping reminder of the importance of compassion and connection, urging readers to see beyond the surface and embrace the invisible struggles of others. "Invisible" is a compelling and impactful read that lingers in the mind long after the last page.
                             </p>
                             <div class="revbtn">
-                                <a href="#" class="btn btn-primary">Buy</a>
+                                <a href="subscribe.jsp" class="btn btn-primary">Buy</a>
                                 <!-- <a href="#" class="btn btn-primary" style="width: 90px;">Comment</a> -->
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </section>
-        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
 
 
         <!----------- Footer ------------>

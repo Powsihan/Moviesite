@@ -116,7 +116,7 @@
 
                 <div class="col-lg-8 mt-5 mt-lg-0">
 
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form action="contact.jsp" method="POST" role="form" class="php-email-form">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="me-2 bg-light glowing-border w-200 siz2" id="name" placeholder="Your Name" required>

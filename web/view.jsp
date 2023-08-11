@@ -7,7 +7,7 @@
     <head>
 
 
-        <title>Book Details</title>
+        <title>Movie Details| CinesynC</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -66,13 +66,13 @@
                 <!-- Search Results Table with Fixed Header and Scrolling Content -->
                 <div style="max-height: 700px; overflow-y: scroll;">
                     <table class="table table-bordered mt-4">
-                        <thead style="position: sticky; top: -1px; z-index: 1;">
+                        <thead style="position: sticky; top: -1px; z-index: 1; background-color:white">
                             <tr>
                                 <th>No</th>
                                 <th style="width: 130px;">Movie_ID</th>
                                 <th>Title</th>
                                 <th>Category</th>
-                                <th>Publication_Date</th>
+                                <th>Release_Date</th>
                                 <th style="width: 100px;">Director</th>
                                 <th>Review</th>
                             </tr>
