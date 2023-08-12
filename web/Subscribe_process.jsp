@@ -41,11 +41,11 @@
         <%
             if (a > 0) {
         %>
-        <h3>Successfully Saved</h3>
+        <h3 class="align-items-center-center">You can buy movies now from Cinesync !!!</h3>
         <%
         } else {
         %>
-        <h3>Error Occurred</h3>
+        <h3>Subscription failed</h3>
         <%
             }
         %>
