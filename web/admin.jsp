@@ -129,7 +129,7 @@
                                     <div class="member-info">
                                         <h4>Dinithi</h4>
                                         <span>Developer</span>
-                                        <span style="font-size: 8px;font-weight: bold;padding-top: 5px">UWU-CST-20-026</span>
+                                        <span style="font-size: 8px;font-weight: bold;padding-top: 5px">UWU-CST-20-028</span>
                                     </div>
                                 </div>
                             </div>
